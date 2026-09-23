@@ -1,5 +1,194 @@
 /* Your SCSS here. */
+$nav-height: 100;
+$overview-color: rgb(241, 212, 189);
+
+:export {
+    navHeight: $nav-height;
+    overviewColor: $overview-color;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: $overview-color;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 5px;
+}
+
 #navbar {
     background-color: rgb(96, 18, 18);
     color: goldenrod;
+    width: 100%;
+    height: $nav-height * 1px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+#rome-footer {
+    height: 50px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(53, 3, 11);
+    color: goldenrod;
+}
+
+a {
+    color: white;
+}
+
+#navbar h1 {
+    font-size: 60px;
+    padding-left: 20px;
+    width: 50%;
+}
+
+#navbar-buttons {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    min-height: 40px;
+    max-height: 100%;
+    width: 100%;
+}
+
+#navbar button {
+    margin: 10px;
+    padding: 15px;
+    font-size: 24px;
+    min-height: 40px;
+    max-height: 80px;
+    background-color: rgb(96, 18, 18);
+    color: goldenrod;
+    border-color: rgb(72, 42, 17);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+#navbar button.active {
+    background-color: rgb(135, 33, 33);
+    color: rgb(241, 183, 37);
+}
+
+#navbar button:hover {
+    background-color: rgb(189, 20, 20);
+    color: rgb(241, 183, 37);
+}
+
+.main-section {
+    min-height: 400px;
+    width: 100%;
+    max-width: 100%;
+    background-color: $overview-color;
+}
+
+
+.main-section p {
+    padding: 5%;
+}
+
+#overview {
+    margin-top: -50px;
+    top: $nav-height * 1px;
+    padding-top: -10px;
+    background-color: $overview-color;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+}
+
+.column {
+    max-width: 33%;
+    margin: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+#overview .column {
+    color:rgb(37, 15, 15);
+    font-size: 28px;
+    margin-top: 80px;
+}
+
+#overview h4, h2, p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#republic-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(63, 6, 6);
+    color: rgb(255, 249, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-divider {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 80%;
+}
+
+#republic-section button {
+    background-color: rgb(163, 30, 30);
+    color: rgb(255, 249, 166);
+    flex: 1;
+    max-width: 60px;
+    min-height: 200px;
+    margin: 10px;
+    border-color: rgb(37, 15, 15);
+}
+
+#republic-section button:hover {
+    background-color: rgb(189, 20, 20);
+    color: rgb(241, 183, 37);
+}
+
+#carousel-main {
+    padding: 20px;
+    background-color: rgb(63, 6, 6);
+    color: rgb(255, 249, 166);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    flex: 8;
+    min-width: 60%;
+    min-height: 400px;
+}
+
+#principate-section {
+    background-image: url("../assets/caesar.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(124, 65, 65);
+    color: rgb(255, 254, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+#principate-section p {
+    font-size: 36px;
+    margin-top: -100px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
 }

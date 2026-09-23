@@ -11,3 +11,6 @@ import './css/main.scss';
 
 // Scripts
 import './js/main.js';
+
+// assets
+import './assets/caesar.png';
