@@ -9,6 +9,14 @@ document.getElementById("rep-button").onclick = function(){ republic()};
 document.getElementById("prin-button").onclick = function(){ principate()};
 document.getElementById("dom-button").onclick = function(){ dominate()};
 
+document.getElementById("caligula-img").onclick = function() {modal("caligula")};
+document.getElementById("aurelius-img").onclick = function() {modal("aurelius")};
+document.getElementById("constant-img").onclick = function() {modal("constantine")};
+
+document.getElementById("caligula").onclick = function() {hideModal("caligula")};
+document.getElementById("aurelius").onclick = function() {hideModal("aurelius")};
+document.getElementById("constantine").onclick = function() {hideModal("constantine")};
+
 var current_slide = 0;
 
 function resizeNavbar() {
@@ -107,4 +115,13 @@ function dominate() {
     document.getElementById("rep-button").style.backgroundColor = "rgb(96, 18, 18)";
         document.getElementById("prin-button").style.backgroundColor = "rgb(96, 18, 18)";
         document.getElementById("dom-button").style.backgroundColor = "rgb(135, 33, 33)";
+}
+
+function modal(id) {
+    document.getElementById(id).style.display = "block";
+}
+
+
+function hideModal(id) {
+    document.getElementById(id).style.display = "none";
 }

@@ -19,3 +19,16 @@ https://www.w3schools.com/html/html_youtube.asp
 
 Smooth Scrolling:
 https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy
+
+Modal Windows:
+https://www.w3schools.com/howto/howto_css_modals.asps
+
+Text Over Video: 
+https://www.reddit.com/r/webdev/comments/1elxory/put_text_over_video/
+GIF Source: https://www.pinterest.com/ideas/roman-empire-gif/906467354419/
+
+Gradients:
+https://www.w3schools.com/css/css3_gradients_radial.asp
+
+CSS3 Animations:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations/Using
