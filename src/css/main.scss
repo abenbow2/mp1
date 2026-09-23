@@ -35,7 +35,7 @@ h1 {
 }
 
 #rome-footer {
-    height: 50px;
+    height: 250px;
     padding: 15px;
     font-size: 18px;
     background-color: rgb(53, 3, 11);
@@ -86,7 +86,8 @@ a {
 }
 
 .main-section {
-    min-height: 400px;
+    min-height: fit-content;
+    height: max-content;
     width: 100%;
     max-width: 100%;
     background-color: $overview-color;
@@ -95,7 +96,9 @@ a {
 
 .main-section p {
     padding: 5%;
+    margin-top: 10px;
 }
+
 
 #overview {
     margin-top: -50px;
@@ -160,14 +163,20 @@ a {
 
 #carousel-main {
     padding: 20px;
-    background-color: rgb(63, 6, 6);
+    background-color: rgb(85, 4, 4);
     color: rgb(255, 249, 166);
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
     flex: 8;
     min-width: 60%;
+    max-width: 80%;
     min-height: 400px;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 #principate-section {
@@ -191,4 +200,25 @@ a {
     margin-top: -100px;
     margin-bottom: 0;
     padding-bottom: 20px;
+}
+
+#dominate-section {
+    height: fit-content;
+    color: rgb(96, 18, 18);
+}
+
+#dominate-section img {
+    margin: 10px;
+}
+
+#dominate-text {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#dominate-text p {
+    padding: 5px;
+    font-size: 32px;
 }
